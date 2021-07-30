@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
 
-  Get insights that help your business grow.
+  <body>
+    <section class="card">
+      <div class="card container grid">
+        <div class="card-text grid">
+          <h2 class="card-title">Get <span class="violet">insights</span> that help your business grow.</h2>
+          <p class="card-subtitle">Discover the benefits of data analytics and make better decisions regarding revenue,
+            customer
+            experience, and overall efficiency.</p>
+          <div id="data1">
+            <h3 class="data-title">10k+</h3>
+            <p class="data_subtitle">COMPANIES</p>
+          </div>
+          <div id="data2">
+            <h3 class="data-title">314</h3>
+            <p class="data_subtitle">TEMPLATES</p>
+          </div>
+          <div id="data3">
+            <h3 class="data-title">12M+</h3>
+            <p class="data_subtitle">QUERIES</p>
+          </div>
+        </div>
+        <img src="images/image-header-desktop.jpg" alt="" class="card-img">
+      </div>
+    </section>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Haganta Brema Bangun</a>.
+    </div>
+  </body>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Haganta Brema Bangun</a>.
-  </div>
-</body>
 </html>

@@ -1,2 +1,107 @@
 /*========== GOOGLE FONT ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    background-color: hsl(244, 38%, 16%);
+    margin: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-text {
+    margin: 60px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-areas: 
+    "title title title"
+    "subtitle subtitle subtitle"
+    "data1 data2 data3";
+}
+
+.card-title {
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    grid-area: title;
+}
+
+.card-subtitle {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    grid-area: subtitle;
+}
+
+.card-data {
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+.data-title,
+.data_subtitle {
+    font-family: Inter, sans-serif;
+    color: white;
+}
+
+.data-title {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.data_subtitle {
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 0.8px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+}
+
+#data1 {
+    grid-area: data1;
+}
+
+#data2 {
+    grid-area: data2;
+}
+
+#data3 {
+    grid-area: data3;
+}
+
+.violet {
+    color: hsl(277, 64%, 61%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
